@@ -1,0 +1,160 @@
+@media only screen and (max-width: 600px) {
+	/* For smartphones */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    #buttons, #search_area_home {
+        display: none;
+    }
+
+    .search_input_mobile {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .button_header, .search_input {
+        font-size: 1.5vw;
+    }
+
+    .search_area_mobile, .button_header_mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .button_header, .search_input, #search_button {
+        font-size: 1.3vw;
+    }
+
+    .search_area_mobile, .button_header_mobile {
+        display: none;
+    }
+
+}
+
+header {
+    height: auto;
+}
+
+.header_home, .search_area_mobile {
+	background-color: #e80c37;
+    overflow:auto; /* Mantem o background-color do header apresentando */
+}
+
+.logo_home {
+    display: inline-block;
+    float: left;
+}
+
+.logo_img {
+    max-width: 100%;
+    vertical-align: middle; /* Mantem o logo posicionado sem a sobra do fundo do header aparecendo na parte de baixo */
+}
+
+.search_area_home {
+	display: inline-block;
+    float: left;
+    padding-left: 2%;
+    box-sizing:border-box; /* Considera o padding como parte do espaço do componente. Impede extrapolação do espaço. */
+    margin-top:1.5%;
+    border-radius: 2px;
+}
+
+.search_input, .search_input_mobile {
+    padding: 10px;
+    border: solid 1px #e80c37;
+    border-radius: 2px;
+    float:left;
+    box-sizing:border-box; /* Considera o padding como parte do espaço do componente. Impede extrapolação do espaço. */
+}
+
+.buttons {
+	display: inline-block;
+    float: right;
+    margin-top:1.5%;
+}
+
+.button_header, .search_button_mobile, .button_menu_mobile {
+    font-family: 'Arimo', sans-serif;
+    color: #fcfcfc;
+    border: solid 1px #fcfcfc;
+    border-radius: 2px;
+    float:right;
+    background-color: #e80c37;
+    padding: 10px 5px 10px 5px;
+    margin: 0px 5px 0px 5px;
+    -webkit-transition-duration: 0.4s; /* Transição de cor durante hover do botão */
+    transition-duration: 0.4s; /* Transição de cor durante hover do botão */
+}
+
+
+.button_header:hover, .search_button_mobile:hover, .button_menu_mobile:hover {
+    background-color: #fcfcfc; 
+    color: #e80c37;
+}
+
+.button_header:focus, .search_button_mobile:focus, .button_menu_mobile:focus {
+    outline:0; /* Remove o contorno azul depois de clicar no botão */
+}
+
+.button_header:active, .search_button_mobile:active, .button_menu_mobile:active { /* Adiciona efeito de clique no botão */
+  transform: translateY(2px);
+}
+
+.search_area_mobile {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    box-sizing:border-box;
+    align-content: center;
+}
+
+.button_menu_mobile {
+    font-family: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-top: 1%;
+    margin-right: 4%;
+}
